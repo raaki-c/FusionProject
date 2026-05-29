@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us — R‑Fusion</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Sora:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'rf-navy': '#0A1D37',
+            'rf-blue': '#133B64',
+            'rf-teal': '#00B4B0',
+            'rf-light': '#F2F5F9',
+            'rf-gray': '#64748B',
+          },
+          fontFamily: {
+            'sans': ['Inter', 'sans-serif'],
+            'heading': ['Sora', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-styles">body {
+    font-family: "Inter", sans-serif;
+    color: #0A1D37
+    }
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Sora", sans-serif
+    }
+.page-rise {
+    opacity: 0;
+    transform: translateY(1.25rem);
+    transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), transform 0.8s cubic-bezier(0.22, 1, 0.36, 1)
+    }
+.page-rise.is-visible {
+    opacity: 1;
+    transform: translateY(0)
+    }
+@media (prefers-reduced-motion: reduce) {
+    .page-rise {
+        opacity: 1;
+        transform: none;
+        transition: none
+        }
+    }</style>
+</head>
+<body class="bg-white">
+<header class="bg-white shadow-sm sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex-shrink-0 flex items-center">
+<a class="inline-flex items-center" href="code.html"><img alt="R‑Fusion" class="h-12 md:h-14 w-auto max-w-[220px] object-contain object-left" decoding="async" src="./Final%20R-FUSION%20LOGO.png"/></a>
+</div>
+<nav class="hidden md:flex space-x-8 items-center">
+<a class="text-rf-navy hover:text-rf-teal px-1 pt-1 pb-1 text-sm font-medium transition-colors" href="code.html">Home</a>
+<a class="text-rf-navy hover:text-rf-teal px-1 pt-1 pb-1 text-sm font-medium transition-colors" href="technology.html">Technology</a>
+
+<a class="text-rf-navy hover:text-rf-teal px-1 pt-1 pb-1 text-sm font-medium transition-colors" href="aboutus.html">About Us</a>
+<a class="bg-rf-navy text-white hover:bg-rf-blue px-6 py-2.5 rounded-md text-sm font-medium transition-colors" href="contactus.html">Contact Us</a>
+</nav>
+</div>
+</div>
+</header>
+<main class="min-h-[50vh] bg-white">
+<section class="bg-white py-12 md:py-16 lg:py-20">
+<div class="page-rise max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<h1 class="text-4xl md:text-5xl font-bold text-black font-heading mb-4">Contact us</h1>
+<p class="text-base md:text-lg text-black mb-10 md:mb-12 max-w-2xl"> Use the form below to get in touch.</p>
+<form action="#" class="space-y-6 md:space-y-8" method="post">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
+<div>
+<label class="block text-sm font-medium text-black mb-2" for="contact-name">Name</label>
+<input class="block w-full rounded-sm border border-neutral-300 bg-white px-4 py-3 text-black shadow-sm transition-colors focus:border-rf-navy focus:outline-none focus:ring-2 focus:ring-rf-navy/20" id="contact-name" name="name" required="" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-black mb-2" for="contact-company">Company</label>
+<input class="block w-full rounded-sm border border-neutral-300 bg-white px-4 py-3 text-black shadow-sm transition-colors focus:border-rf-navy focus:outline-none focus:ring-2 focus:ring-rf-navy/20" id="contact-company" name="company" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
+<div>
+<label class="block text-sm font-medium text-black mb-2" for="contact-email">Email</label>
+<input class="block w-full rounded-sm border border-neutral-300 bg-white px-4 py-3 text-black shadow-sm transition-colors focus:border-rf-navy focus:outline-none focus:ring-2 focus:ring-rf-navy/20" id="contact-email" name="email" required="" type="email"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-black mb-2" for="contact-subject">Subject</label>
+<input class="block w-full rounded-sm border border-neutral-300 bg-white px-4 py-3 text-black shadow-sm transition-colors focus:border-rf-navy focus:outline-none focus:ring-2 focus:ring-rf-navy/20" id="contact-subject" name="subject" type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-black mb-2" for="contact-message">Message</label>
+<textarea class="block w-full min-h-[180px] md:min-h-[220px] resize-y rounded-sm border border-neutral-300 bg-white px-4 py-3 text-black shadow-sm transition-colors focus:border-rf-navy focus:outline-none focus:ring-2 focus:ring-rf-navy/20" id="contact-message" name="message" required="" rows="6"></textarea>
+</div>
+<div class="flex justify-end pt-2">
+<button class="inline-flex items-center justify-center rounded-sm bg-rf-navy px-10 py-3.5 text-sm font-semibold uppercase tracking-wide text-white transition-colors hover:bg-rf-blue focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rf-navy" type="submit">Submit</button>
+</div>
+</form>
+<p class="mt-8 text-sm text-rf-gray">
+          Or email us directly at
+          <a class="text-rf-navy font-medium hover:text-rf-teal transition-colors" href="mailto:info@r-fusion.com">info@r-fusion.com</a>
+</p>
+</div>
+</section>
+</main>
+<footer class="bg-white border-t border-gray-200 py-8 mt-auto">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+<div class="flex items-center space-x-2">
+<a class="inline-flex" href="code.html"><img alt="R‑Fusion" class="h-8 md:h-9 w-auto max-w-[180px] object-contain object-left" decoding="async" src="./Final%20R-FUSION%20LOGO.png"/></a>
+</div>
+<div class="flex items-center space-x-6 text-sm text-rf-gray">
+<a class="flex items-center hover:text-rf-navy transition-colors" href="mailto:info@r-fusion.com">
+<svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+          info@r-fusion.com
+        </a>
+<a class="flex items-center hover:text-rf-navy transition-colors" href="#">
+<svg aria-hidden="true" class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" fill-rule="evenodd"></path></svg>
+          LinkedIn
+        </a>
+</div>
+<div class="text-sm text-rf-gray">
+        © 2026 RFusion. All rights reserved.
+      </div>
+</div>
+</footer>
+<script>
+(function () {
+  var content = document.querySelector(".page-rise");
+  if (!content) return;
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    content.classList.add("is-visible");
+    return;
+  }
+  requestAnimationFrame(function () {
+    requestAnimationFrame(function () {
+      content.classList.add("is-visible");
+    });
+  });
+})();
+</script>
+</body>
+</html>
